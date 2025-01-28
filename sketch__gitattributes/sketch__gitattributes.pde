@@ -53,7 +53,6 @@
 
 //EJERCICIO 3
 
-String myString = "Hello";
 
 //Se ejecuta una sola vez
 void setup(){
@@ -63,5 +62,44 @@ void setup(){
 
 //Se ejecuta 1 vez por fotogragrama
 void draw (){
- print(myString);
+ background(50, 250, 100);
+ 
+ //Mueve el origen del sistema de coordenadas
+ translate(250, 270);
+//Definir primera elipse
+//Base del cuerpo
+ fill(#14D839);
+ ellipse(0, 50, 150, 40);
+ 
+ //Centro del cuerpo
+ ellipse(0, 0, 100, 100);
+ 
+ //Manos
+ ellipse(-50, 25, 30, 30);
+ ellipse(50, 25, 30, 30);
+ 
+ //Ojos
+ fill(255);
+ ellipse(-30, -40, 50, 50);
+ ellipse(30, -40, 50, 50);
+ 
+ //pupilas
+ fill(0);
+ ellipse(-30, -40, 30, 30);
+ ellipse(30, -40, 30, 30);
+ 
+//Esto centra los rectangulos
+//boca
+ rectMode(CENTER);
+ //Rectangulo (x, y, ancho, alto)
+ fill(255, 0, 0);
+ rect(0, 10, 60, 10);
+ 
+ //el 100 es el ALPHA osea la transparencia
+ fill(#72CAF5, 100);
+ ellipse(0, -10, 195, 195);
+ 
+ noStroke();
+ triangle(50, -80, 65, -65, 45, -75);
+ triangle(50, -70, 65,  65, 45, -65);
 }
