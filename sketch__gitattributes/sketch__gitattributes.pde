@@ -89,7 +89,7 @@ void draw (){
  ellipse(30, -40, 30, 30);
  
 //Esto centra los rectangulos
-//boca
+//Boca
  rectMode(CENTER);
  //Rectangulo (x, y, ancho, alto)
  fill(255, 0, 0);
@@ -99,6 +99,8 @@ void draw (){
  fill(#72CAF5, 100);
  ellipse(0, -10, 195, 195);
  
+ 
+ //Gotas en la frente
  noStroke();
  triangle(50, -80, 65, -65, 45, -75);
  triangle(50, -70, 65,  65, 45, -65);
