@@ -1,3 +1,5 @@
+//EJERCICIO 1
+
 //escribrir en la consola
 //print("Hola como van?");
 
@@ -24,23 +26,42 @@
 
 // los valores de y van de arriba hacia abajo
 
+//EJERCICIO 2
+
 //Variable tipo bool
 //0 = false; y 1= true
-boolean z = false;
+//boolean z = false;
 
-print(z);
+//print(z);
 
 //Variable tipo char
 // Solo acepta caracteres individuales
-char h = 'T';
+//char h = 'T';
 
 //Variable tipo String
-String hola = "Chao";
+//String hola = "Chao";
 
 //Variable tipo Float = variable de numeros decimales; y Int = Variable de numeros enteros
-float num = 3.5;
-int intnum = 10;
+//float num = 3.5;
+//int intnum = 10;
 
 //Variable tipo Color
 //Aca abajo estoy creando un color y le estoy asignando un color a una variable "redColor"
-color redColor = color(200, 10, 10);
+//color redColor = color(200, 10, 10);
+
+// Funciones: Void Setup y Void draw
+
+//EJERCICIO 3
+
+String myString = "Hello";
+
+//Se ejecuta una sola vez
+void setup(){
+ size(500, 500);
+}
+
+
+//Se ejecuta 1 vez por fotogragrama
+void draw (){
+ print(myString);
+}
